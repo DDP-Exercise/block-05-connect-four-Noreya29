@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Connect Four</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--TODO: Build the Markup for your Game. Don't forget to style it in a cascading stylesheet. -->
-
+<link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Uncial+Antiqua&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Mrs+Saint+Delafield&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Uncial+Antiqua&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+<!--TODO: Build the Markup for your Game. Don't forget to style it in a cascading stylesheet. -->
+<header>
+    <h1>Thor vs. Loki</h1>
+    <p class="status"></p>
+    <p class="winner"></p>
+</header>
+<div class="container">
+    <div class="board" id="board"></div>
+</div>
+<script type="module" src="js/model.connectfour.js"></script>
+<script type="module" src="js/view.polished.js"></script>
+<script type="module" src="js/controller.connectfour.js"></script>
 </body>
 </html>

@@ -1,0 +1,73 @@
+body {
+    text-align: center;
+    margin: 0;
+    background-image: url("thor_loki.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: "Uncial Antiqua", system-ui;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+.status {
+    font-family: "Jim Nightshade", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    margin: 5px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.winner {
+    font-family: "Jim Nightshade", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    margin: 0;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    background-color: silver;
+    padding: 20px;
+    border-radius: 10px;
+    border: 10px solid darkgray;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    background-color: darkgray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.thor {
+    background-color: #751310;
+}
+
+.loki {
+    background-color: #185428;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}

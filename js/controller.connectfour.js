@@ -38,10 +38,32 @@
  *     The creation of this game should take you somewhere between
  *     8-10 hours of concentrated work.
  *     Bratlsoft - 2026-04-29
+ *     Noreya Friesacher - 2026-04-30
  *******************************************************/
 
 
 //TODO: Create your controller-object. When initiated, it should boot
 //      the view (or views, if you decide to make a console-view).
 
+
+import {model, createGameBoard, insertStone} from "./model.connectfour.js";
+
+//create board
+createGameBoard();
+
+//activate insertion stone
+insertStone.init();
+
+
+
 //TODO: Add EventListeners, to forward the user inputs to the model.
+
+model.addEventListener("game:change", (e) => {
+    document.querySelector(".status").className = "status " + e.detail.currentPlayer + "-selected";
+});
+
+model.addEventListener("game:change", (e) => {})
+
+model.addEventListener("game:over", (e) => {
+    document.querySelector(".winner").textContent = e.detail.winner + " wins!";
+});
